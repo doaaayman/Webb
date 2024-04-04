@@ -1,0 +1,172 @@
+body { 
+    font-family: 'Poppins', sans-serif; 
+    font-size: 1rem; 
+    line-height: 1.5; 
+    color: var(--fontColor); 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    padding: 0; 
+    margin: 0; 
+}
+
+section {
+    width: 80%; /* Adjust the width of the sections */
+    margin: 5px auto; /* Center the sections horizontally and add margin */
+}
+
+section h2 {
+    font-size: 1.3rem;
+    color: #3498db;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.faq-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.faq-list li {
+    margin-bottom: 1rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding-bottom: 1rem;
+}
+
+.faq-list h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.faq-list p {
+    margin: 0;
+}
+
+header {
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #3498db;
+    color: #fff;
+    padding: 5px 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+header nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+
+.content {
+    padding-bottom: 50px; 
+}
+.faq-list {
+    --primaryColor: #3498db;
+    --fontColor: #2c3e50;
+    --darkFontColor: #1f2b38;
+    --lightFontColor: #ecf0f1;
+}
+
+.faq-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.faq-list li {
+    margin-bottom: 1rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding-bottom: 1rem;
+}
+
+.faq-title {
+    font-size: 1.2rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    margin: 0; /* Remove any existing margin */
+    padding: 0; /* Remove any existing padding */
+}
+
+
+
+.faq-title::before {
+    content: "+";
+    margin-right: 1rem;
+}
+
+.faq-trigger {
+    display: none;
+}
+
+.faq-trigger:checked + .faq-title::before {
+    content: "-";
+}
+
+.faq-detail {
+    display: none;
+}
+
+.faq-trigger:checked + .faq-title + .faq-detail {
+    display: block;
+}
+
+.faq-title:hover {
+    color: var(--primaryColor);
+}
+
+.faq-title:hover::before {
+    color: var(--primaryColor);
+}
+
+.faq-detail {
+    animation: fadeIn 0.5s ease forwards;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+/* Add CSS for different sections */
+#places h2,
+#transportation h2,
+#hotels h2,
+#museum h2,
+#rules h2 {
+    color: #3498db; /* Change the color of the section headings */
+    text-align: left; /* Center align the section headings */
+    margin-bottom: 20px; /* Add margin bottom to the section headings */
+}
+
+/* Add more specific CSS for each section if needed */
+
+/* Define keyframes for FAQ details animation */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
