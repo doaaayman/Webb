@@ -3,102 +3,252 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="CSS/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-    <title>MyClean 1 NYC & Chicos</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script>    document.addEventListener('scroll', () => {
+        const header = document.querySelector('header');
+        if (window.scrollY > 0) {
+            header.classList.add('scrolled');
+        } else {
+            header.classList.remove('scrolled');
+        }
+    });
+</script>
+    <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Quicksand:wght@300..700&family=Style+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="project.css"> <!-- Include the navigation bar CSS -->
+    <title>Welcome</title>
 </head>
 <body>
-
     <header>
-        <h1>MyClean 1 NYC & Chicos</h1>
-        <nav>
-            <ul>
-                <li><a href="#">Home Cleaning</a></li>
-                <li><a href="#">Office Cleaning</a></li>
-                <li><a href="#">FAQ</a></li>
-                <li><a href="#">Login</a></li>
-            </ul>
+        <nav class="navbar">
+            <div class="dropdown">
+                <button class="dropbtn">
+                    <div class="menu"></div>
+                    <div class="menu"></div>
+                    <div class="menu"></div>
+                </button>
+                <div class="dropdown-content">
+                    <li class="li-hidden"><a class="home" href="#">Home</a></li>
+                    <li class="li-hidden"><a href="#">Places</a></li>
+                    <li class="li-hidden"><a href="#">Hotels</a></li>
+                    <li class="li-hidden"><a href="#">Restaurants</a></li>
+                    <li class="li-hidden"><a href="#">Transportation</a></li>
+
+                    <li><a href="#">Egypt</a></li> <!-- Second level menu item with link -->
+                    <li><a href="#">Buy Now!</a></li>
+                    <li><a href="#">registration</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </div>
+            </div>
+            <div class="logo_container">
+                <h1>HI<span id="EGYPT">EGYPT</span></h1>
+            </div>
+
+            <div class="page-total">
+
+                <ul class="ul-page-total" >
+                    <li><a class="home" href="#">Home</a></li>
+                    <li><a href="#">Places</a></li>
+                    <li><a href="#">Hotels</a></li>
+                    <li><a href="#">Restaurants</a></li>
+                    <li><a href="#">Transportation</a></li>
+                </ul>
+
+            </div>
+            <button class="login-button">Log In</button>
+
         </nav>
+
     </header>
-    
-    <section id="faq" class="section">
-        <h2 style="text-align: center;">Hello, how can we help?</h2>
-        <ul class="faq-list">
-            <!-- Add FAQ questions and answers here -->
-        </ul>
-    </section>
-    
-    <section id="places" class="section">
-        <h2>Places</h2>
-        <ul class="faq-list">
-            <li>
-                <input type="checkbox" id="places-1" class="faq-trigger">
-                <label for="places-1" class="faq-title">What are some popular tourist attractions?</label>
-                <div class="faq-detail">
-                    <p>Some popular tourist attractions include the Statue of Liberty, Central Park, Empire State Building, and Times Square.</p>
+ 
+
+    <div class="background">
+        <div class="overlay">
+            <div class="here">
+                <div class="content">
+                    <p>H O T E L E X P E R I E N C E</p>
+                    <h2>A UNIQUE EXPERIENCE</h2>
+                    <h2>WHERE TO STAY</h2>
+                    <button class="read-more">Read More</button>
                 </div>
-            </li>
-            <!-- Add more questions and answers related to places -->
-        </ul>
+            </div>
+        </div>
+    </div>
+
+    <section class="white-section">
+        <div class="content1">
+            <div class="text-section">
+                <p>ABOUT US</p>
+                <h2>Services of Egypt Hotels</h2>
+                <h4>Discover the essence of Egyptian hospitality with Egypt Hotels. Our services offer luxurious accommodations, exquisite dining, rejuvenating spa treatments, and personalized concierge assistance. <br> <br>Experience comfort and satisfaction throughout your stay, whether for business or leisure. Indulge in opulence and explore the wonders of Egypt with us.
+                </h4>
+                <h5>Enjoy your trip</h5>
+            </div>
+            <div class="photo-section">
+                <img src="https://egyptescapes.com/wp-content/uploads/2020/03/sharm.png">
+            </div>
+        </div>
     </section>
+  <div class="wrapper">
+  <div class="title">
+    <h1>With lots of services!</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+  </div>
+  <div class="services-section">
+    <div class="card">
+      <div class="icon">
+        <i class="fas fa-laptop-code"></i>
+      </div>
+      <h2>Design & planning</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    </div>
+    <div class="card">
+      <div class="icon">
+        <i class="fas fa-tools"></i>
+      </div>
+      <h2>Services</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    </div>
+    <div class="card">
+      <div class="icon">
+        <i class="far fa-handshake"></i>
+      </div>
+      <h2>Help & support</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    </div>
+  </div>
+</div>
+
+
+ <div class="section-margin-top" id="visit">
+			<div class="row">
+				<div class="tm-section-header">
+					<div class="col-lg-3 col-md-3 col-sm-3">
+						
+					</div>
+					<div class="col-lg-6 col-md-6 col-sm-6">
+						<h2 class="tm-section-title">Choose your destination</h2>
+					</div>
+					<div class="col-lg-3 col-md-3 col-sm-3">
+					
+					</div>
+				</div>
+			</div>
+			<div class="row reveal">
+				<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 col-xxs-12">
+					<div class="tm-home-box-2">
+				<a href ="">		<img src="https://media.cntravellerme.com/photos/64ae74fd7e05fa81b21f3037/master/pass/Marriott%20Mena%20House%20July%2023%20pr.jpg" alt="image" class="img-responsive"> </a>
+						<h3>Goa beach</h3>
+						<div class="tm-home-box-2-container">
+							<span class="tm-home-box-2-link"><i
+									class="fa fa-heart tm-home-box-2-icon border-right"></i></span>
+						<span
+									class="tm-home-box-2-description">Check out</span></a>
+							<span class="tm-home-box-2-link"><i
+									class="fa fa-edit tm-home-box-2-icon border-left"></i></span>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 col-xxs-12">
+					<div class="tm-home-box-2">
+						<img src="https://media.cntravellerme.com/photos/64ae74fd7e05fa81b21f3037/master/pass/Marriott%20Mena%20House%20July%2023%20pr.jpg" alt="image" class="img-responsive">
+						<h3>Rajasthan desert</h3>
+						<div class="tm-home-box-2-container">
+							<span class="tm-home-box-2-link"><i
+									class="fa fa-heart tm-home-box-2-icon border-right"></i></span>
+							<span
+									class="tm-home-box-2-description">Check out</span></a>
+							<span class="tm-home-box-2-link"><i
+									class="fa fa-edit tm-home-box-2-icon border-left"></i></span>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 col-xxs-12">
+					<div class="tm-home-box-2">
+						<img src="https://media.cntravellerme.com/photos/64ae74fd7e05fa81b21f3037/master/pass/Marriott%20Mena%20House%20July%2023%20pr.jpg" alt="image" class="img-responsive">
+						<h3>Konkan railway journey</h3>
+						<div class="tm-home-box-2-container">
+							<span class="tm-home-box-2-link"><i
+									class="fa fa-heart tm-home-box-2-icon border-right"></i></span>
+						<span
+									class="tm-home-box-2-description">Check out</span></a>
+							<span class="tm-home-box-2-link"><i
+									class="fa fa-edit tm-home-box-2-icon border-left"></i></span>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 col-xxs-12">
+					<div class="tm-home-box-2 tm-home-box-2-right">
+						<img src="https://media.cntravellerme.com/photos/64ae74fd7e05fa81b21f3037/master/pass/Marriott%20Mena%20House%20July%2023%20pr.jpg" alt="image" class="img-responsive">
+						<h3>Assam jungles</h3>
+	        	<div class="tm-home-box-2-container">
+            <i class="fa fa-heart tm-home-box-2-icon border-right"></i>
+            <span class="tm-home-box-2-description">Check out</span>
+            <i class="fa fa-edit tm-home-box-2-icon border-left"></i>
+            </div>
+					</div>
+				</div>
+			</div>
+		</div>
     
-    <section id="transportation" class="section">
-        <h2>Transportation</h2>
-        <ul class="faq-list">
-            <li>
-                <input type="checkbox" id="transportation-1" class="faq-trigger">
-                <label for="transportation-1" class="faq-title">What are the transportation options in the city?</label>
-                <div class="faq-detail">
-                    <p>The city offers various transportation options including subway, buses, taxis, and ride-sharing services.</p>
+<div class="newsletter-container">
+    <h1>Get Latest Updates</h1>
+    <form>
+        <input type="email" name="email" id="email" placeholder="Enter your email" required>
+        <div id="error-message" class="error-message"></div>
+        <button type="submit">Subscribe</button>
+    </form>
+</div>
+    </div>
+    <footer>
+        <div class="footer">
+        <div class="footer-container">
+            <div class="footer-row" >
+                <div class="footer-col" id="footer-col-1">
+                    <h4>ONE</h4>
+                    <hr class="footer-line-col">
+                    <ul>
+                        <li><a href="#">there</a></li>
+                        <li><a href="#">there</a></li>
+                        <li><a href="#">there</a></li>
+                        <li><a href="#">there</a></li>
+                    </ul></div>
+                    <div class="footer-col" id="footer-col-2">
+                        <h4>Two</h4>
+                        <hr class="footer-line-col">
+                        <ul>
+                            <li><a href="#">here</a></li>
+                            <li><a href="#">here</a></li>
+                            <li><a href="#">here</a></li>
+                            <li><a href="#">here</a></li>
+                        </ul></div>
+                <div class="footer-col" id="footer-col-3">
+                    <h4>Three</h4>
+                    <hr class="footer-line-col">
+                    <ul>
+                        <li><a href="#">where</a></li>
+                        <li><a href="#">where</a></li>
+                        <li><a href="#">where</a></li>
+                        <li><a href="#">where</a></li>
+                    </ul></div>
+                    <div class="footer-col" id="footer-col-4">
+                        <h4 id="footer-media-title">follow us</h4>
+                        <hr class="footer-line-col" id="footer-line-col-media">
+                        <div class="social-links">
+                            <a href="#" class="fa fa-facebook"></a>
+                            <a href="#" class="fa fa-twitter"></a>
+                            <a href="#" class="fa fa-instagram"></a>
+                            <a href="#" class="fa fa-linkedin"></a>
+    
+    
+                    </div>
                 </div>
-            </li>
-            <!-- Add more questions and answers related to transportation -->
-        </ul>
-    </section>
-    
-    <section id="hotels" class="section">
-        <h2>Hotels</h2>
-        <ul class="faq-list">
-            <li>
-                <input type="checkbox" id="hotels-1" class="faq-trigger">
-                <label for="hotels-1" class="faq-title">What are some recommended hotels in the area?</label>
-                <div class="faq-detail">
-                    <p>Some recommended hotels include Hotel A, Hotel B, and Hotel C, which offer comfortable accommodation and convenient locations.</p>
-                </div>
-            </li>
-            <!-- Add more questions and answers related to hotels -->
-        </ul>
-    </section>
-    
-    <section id="museum" class="section">
-        <h2>Museum</h2>
-        <ul class="faq-list">
-            <li>
-                <input type="checkbox" id="museum-1" class="faq-trigger">
-                <label for="museum-1" class="faq-title">What museums can I visit in the city?</label>
-                <div class="faq-detail">
-                    <p>Some popular museums include the Metropolitan Museum of Art, Museum of Modern Art, and American Museum of Natural History.</p>
-                </div>
-            </li>
-            <!-- Add more questions and answers related to museums -->
-        </ul>
-    </section>
-    
-    <section id="rules" class="section">
-        <h2>Rules</h2>
-        <ul class="faq-list">
-            <li>
-                <input type="checkbox" id="rules-1" class="faq-trigger">
-                <label for="rules-1" class="faq-title">What are some important rules to follow in the city?</label>
-                <div class="faq-detail">
-                    <p>Some important rules include respecting pedestrian signals, following traffic laws, and keeping public spaces clean.</p>
-                </div>
-            </li>
-            <!-- Add more questions and answers related to rules -->
-        </ul>
-    </section>
-    
-    
-    
-    </body>
-    </html>
+            </div>
+        </div>
+    </div>
+    </footer>
+</body>
+</html>
