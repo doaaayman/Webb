@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cairo</title>
+    <link rel="stylesheet" type="text/css" href="fontawesome-5/fontawesome-css/all.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Noto+Sans+SC:wght@100..900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@100..900&display=swap" rel="stylesheet">    
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<main>
+	<nav class="navbar">
+		<div class="dropdown">
+			<button class="dropbtn">
+				<div class="menu"></div>
+				<div class="menu"></div>
+				<div class="menu"></div>
+			</button>
+			<div class="dropdown-content" id="dropdownMenu">
+				<li><a href="index.html">Egypt</a></li> <!-- Second level menu item with link -->
+				<li class="li-hidden"><a href="places.html">Where To Go</a></li>
+				<li class="li-hidden"><a href="hotels.html">Hotels&Stays</a></li>
+				<li class="li-hidden"><a href="restaurants.html">Restaurants</a></li>
+				<li class="li-hidden"><a href="transportation.html">Transportation</a></li>
+				<li><a href="store.html">Buy Now!</a></li>
+				<li><a href="registration.html">Registration</a></li>
+				<li><a href="faq.html">Frequently Asked Questions</a></li>
+				<li><a href="contact.html">Contact Us</a></li>
+			</div>
+		</div>
+		<div class="logo_container" id="logoContainer">
+			<h1>HI<span id="EGYPT">EGYPT</span></h1>
+		</div>
+	</nav>
+	
+	<section class="hero" id="home">
+        <div class="container">
+          <h2 class="h1 hero-title">Explore Cairo</h2>
+		  <div class="btn-group">
+			<a href="#header" class="btn btn-primary">Check now</a>
+		</div>
+		
+        </div>
+      </section>
+
+	  <header id="header">
+		<ul class="indicator">
+
+
+        <div class="filter-condition">
+            <span>View As a</span>
+            <select name="" id="select">
+                <option value="Default">Default</option>
+                <option value="LowToHigh">Low to high</option>
+                <option value="HighToLow">High to low</option>
+            </select>
+        </div>
+    </header>
+    <div class="product-field">
+        <ul class="items">
+			<li data-category="Hotel"  data-price="$168">
+                <picture>
+                    <img src="https://media.radissonhotels.net/image/radisson-blu-hotel-cairo-heliopolis/exterior/16256-116452-f76702588_4k.jpg?impolicy=GalleryLightboxFullscreen" alt="">
+                </picture>
+                <div class="detail">
+                    <strong>Hotel</strong>
+                    <span>Radisson Blu Hotel, 4.4 stars,Lnaguages spoken:
+						English, Arabic</span>
+						<a href="https://www.radissonhotels.com/en-us/hotels/radisson-blu-cairo-heliopolis"><small>Website</small></a>
+					</div>
+                <h4>$168</h4>
+            </li>
+			<li data-category="Hotel" data-price="$200">
+				<picture>
+					<img src="../Images/CH-2.jpg" alt="">
+				</picture>
+				<div class="detail">
+					<strong>Hotel</strong>
+					<span>Marriott Mena House, 4.6 stars,Languages spoken: English, Arabic</span>
+					<a href="https://www.marriott.com/en-us/hotels/caimn-marriott-mena-house-cairo/overview/"><small>Website</small></a>
+				</div>
+				<h4>$200</h4>
+			</li>
+			<li data-category="Hotel" data-price="180">
+				<picture>
+					<img src="../Images/CH-3.jpg" alt="">
+				</picture>
+				<div class="detail">
+					<strong>Hotel</strong>
+					<span>Kempinski Nile Hotel, 4.5 stars, Languages spoken: English, Arabic, French</span>
+					<a href="https://www.kempinski.com/en/nile-hotel"><small>Website</small></a>
+				</div>
+				<h4>$180</h4>
+			</li>
+
+			<li data-category="Hotel" data-price="60">
+				<picture>
+					<img src="../Images/CH-4.jpg" alt="">
+				</picture>
+				<div class="detail">
+					<strong>Hotel</strong>
+					<span>Pyramids Park Resort, 4.2 stars, Languages spoken: English, Arabic</span>
+					<a href="http://pyramidsparkresort.com/?fbclid=IwAR1ywk-I-5NHqTNC7xwujNnR1Htx1KuNlKeZVdLoL6xzttZqmlxNjuyaak8"><small>Website</small></a>
+				</div>
+				<h4>$180</h4>
+			</li>
+
+
+			<!--****************************Youth hostels*********************************** --> 
+
+			<li data-category="Youth Hostel" data-price="25">
+				<picture>
+					<img src="../Images/CHO - 1.jpg" alt="">
+				</picture>
+				<div class="detail">
+					<strong>Youth Hostel</strong>
+					<span>Freedom Hostel, 4.2 stars, Languages spoken: English, Arabic</span>
+					<a href="https://www.facebook.com/profile.php?id=100057452829886"><small>Page</small></a>
+				</div>
+				<h4>$25</h4>
+			</li>
+
+			<li data-category="Youth Hostel" data-price="15">
+				<picture>
+					<img src="../Images/CHO -2.jpg" alt="">
+				</picture>
+				<div class="detail">
+					<strong>Youth Hostel</strong>
+					<span>Freedom Hostel, 4.2 stars, Languages spoken: English, Arabic</span>
+					<a href="https://www.facebook.com/profile.php?id=100057452829886"><small>Page</small></a>
+				</div>
+				<h4>$15</h4>
+			</li>
+
+		</ul>
+    </div>
+</main>
+<footer>
+	<div class="footer">
+		<div class="footer-container">
+			<div class="footer-row">
+				<div class="footer-col" id="footer-col-1">
+					<h4>TRAVEL TO EGYPT</h4>
+					<hr class="footer-line-col">
+					<ul>
+						<li><a href="html files/hotels.html">Hotels</a></li>
+						<li><a href="html files/restaurants.html">Restaurants</a></li>
+						<li><a href="html files/transportation.html">Transportation</a></li>
+					</ul>
+				</div>
+				<div class="footer-col" id="footer-col-2">
+					<h4>JOIN & BUY</h4>
+					<hr class="footer-line-col">
+					<ul>
+						<li><a href="html files/registration.html">Registration</a></li>
+						<li><a href="html files/store.html">Buy now</a></li>
+					</ul>
+				</div>
+				<div class="footer-col" id="footer-col-3">
+					<h4>NEED HELP?</h4>
+					<hr class="footer-line-col">
+					<ul>
+						<li><a href="html files/faq.html">FAQ</a></li>
+						<li><a href="html files/contact.html">Contact Us</a></li>
+					</ul>
+				</div>
+				<div class="footer-col" id="footer-col-4">
+					<h4 id="footer-media-title">follow us</h4>
+					<hr class="footer-line-col" id="footer-line-col-media">
+					<div class="social-links">
+						<a href="#" class="fa fa-facebook"></a>
+						<a href="#" class="fa fa-twitter"></a>
+						<a href="#" class="fa fa-instagram"></a>
+						<a href="#" class="fa fa-linkedin"></a>
+
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+
+<script type="text/javascript" src="../3rd page/main.js"></script>
+</body>
+</html>

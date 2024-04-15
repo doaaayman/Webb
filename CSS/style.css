@@ -304,7 +304,7 @@ body {
  
  
  .section h2 {
-     font-size: 2rem; /* Increase font size for h2 */
+     font-size: 1rem;
  }
  
  
@@ -319,16 +319,16 @@ body {
      margin: 0;
  }
  
+ .faq-title {
+     font-size: 1.2rem !important;
+ }
+ 
  .faq-list li {
      margin-bottom: 1rem;
      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
      padding-bottom: 1rem;
  }
  
- .faq-list h3 {
-     font-size: 1.2rem;
-     margin-bottom: 0.5rem;
- }
  
  .faq-list p {
      margin: 0;
@@ -358,7 +358,6 @@ body {
  }
  
  .faq-title {
-     font-size: 1.5rem;
      cursor: pointer;
      display: flex;
      align-items: center;
@@ -409,7 +408,8 @@ body {
  #museum h2,
  #rules h2 {
      color: #50320a; /* Change the color of the section headings */
-     text-align: center; /* Center align the section headings */
+     text-align: center;
+     font-size: 1.5rem; /* Center align the section headings */
      margin-bottom: 20px; /* Add margin ottom to the section headings */
  }
  #places h4,
