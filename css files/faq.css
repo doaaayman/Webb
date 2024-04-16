@@ -1,0 +1,700 @@
+body {
+    font-family: 'Noto Sans SC', sans-serif;
+     font-size: 1rem;
+     line-height: 1.5;
+     color: #ecf0f1; /* Light font color */
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     padding: 0;
+     margin: 0;
+ }
+ 
+ header {
+     height: 5em;
+     display: flex;
+     align-items: center;
+     position: absolute;
+     top: 0;
+     width: 100%;
+     z-index: 2;
+     font-weight: 600;
+     font-style: normal;
+     background-color: rgba(0, 0, 0, 0.3);
+ }
+ 
+ 
+ .centered {
+     max-width: 600px;
+ }
+ 
+ .centered h1 {
+     font-size: 3em;
+     margin-bottom: 20px;
+ }
+ 
+ .subtitle {
+     font-size: 1.2em;
+     margin-bottom: 30px;
+ }
+ 
+ .search-form {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+ 
+ .search-input {
+     padding: 10px;
+     width: 500px;
+     height: 60;
+     border: none;
+     border-radius: 20px 0 0 20px;
+ }
+ 
+ .search-button {
+     padding: 10px 20px;
+     background-color: #e99815;
+     color: white;
+     height: 60;
+     border: none;
+     border-radius: 0 20px 20px 0;
+     cursor: pointer;
+     transition: background-color 0.3s;
+ }
+ 
+ .search-button:hover {
+     background-color: #d78a13;
+ }
+ 
+ 
+ 
+ header.scrolled{
+     background-color: #2a4851;
+     opacity: 0.80;
+     box-shadow: 5px 1px 1px rgb(43, 41, 41);
+ }
+ 
+ 
+ body {
+     margin: 0;
+     padding: 0;    
+ }
+ 
+ .dropbtn .menu {
+     width: 35px;
+     height: 5px;
+     background-color: rgb(255, 255, 255);
+     margin: 6px 0;
+   }
+ 
+ 
+ .navbar {
+     
+     width: 100%;
+     overflow: hidden;
+     height: 80px; 
+ }
+ 
+ .navbar a {
+     float: right;
+     display: block;
+     color: #f2f2f2;
+     text-align: center;
+     padding: 30px 25px; /* Adjusted padding for vertical centering */
+     text-decoration: none;
+     transition: color 0.3s; /* Smooth transition */
+ }
+ 
+ .navbar a:hover {
+     color: #ffffff;
+     font-size: large; /* Change of text color on hover */
+     background-color: rgb(233, 134, 21, .7);
+ }
+ 
+ 
+ .logo_container{
+     height: 100%;
+     display: table;
+     float: left;
+ 
+ }
+ 
+ .logo_container h1{
+     color: white;
+     height: 100%;
+     display: table-cell;
+     vertical-align: middle;
+     font-family: monospace;
+     font-size: 32px;
+ }
+ 
+ .logo_container h1 span{
+     font-weight: 800;
+ }
+ .logo_container #EGYPT{
+     color: #e99815;
+     font-family: monospace;
+     font-size: 32px;
+ }
+ 
+ .li-hidden{
+     display: none;
+ }
+ 
+ .navbar .page-total{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     float: none;
+     position: absolute;
+     left: 30%;
+     list-style-type: none;
+     height: 100%;
+ }
+ .ul-page-total{
+     list-style-type: none;
+     display: flex;    
+ }
+ 
+ 
+ 
+ 
+ .dropdown {
+     float: left;
+     overflow: hidden;
+ }
+ 
+ .dropdown .dropbtn {
+     font-size: 16px;
+     border: none;
+     outline: none;
+     color: white;
+     background-color: inherit;
+     margin: 0;
+     padding: 20px 16px; /* Adjusted padding for vertical centering */
+     cursor: pointer;
+     transition: color 0.3s; /* Smooth transition */
+     list-style-type: none; 
+ }
+ .dropdown-content {
+     display: none;
+     position: absolute;
+     background-color: rgb(42, 72, 81,.85);
+     min-width: 160px;
+     z-index: 1;
+         list-style-type: none;
+       
+       
+     
+ }
+ 
+ .ul-page-total .home{
+     color: #e99815;   
+     font-size: large; 
+ }
+ 
+ .dropdown-content a {
+     width: 100%;
+     color: #ffffff;
+     padding: 12px 16px;
+     text-decoration: none;
+     display: block;
+     text-align: center;
+ }
+ 
+ .dropdown-content a:hover {
+     background-color: #e99815;
+ color: white;
+ }
+ 
+ .dropdown:hover .dropdown-content {
+     display: block;
+ }
+ 
+ 
+ .login-button {
+ 
+     background-color: #e99815;
+     color: #333;
+     border: none;
+     border-radius: 20%; /* Circular shape */
+     padding: 14px 15px;
+     margin: 18px 21px; /* Adjusted margin for vertical centering */
+     cursor: pointer;
+     transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+     float: right;
+     width: 70%;
+     
+ }
+ 
+ .login-button:hover{
+     background-color: #ffffff;
+ 
+ }
+ 
+ 
+     
+ 
+ @media screen and (max-width: 767px) {
+     .navbar a {
+         float: none;
+         display: block;
+         text-align: left;
+         width: 100%;
+         padding: 14px 16px; /* Adjusted padding */
+         box-sizing: border-box; /* Include padding in width calculation */
+     }
+ 
+     .navbar .logo {
+         float: none;
+         display: block;
+         text-align: left;
+         width: 100%;
+         margin: 0;
+         padding: 20px 16px; /* Adjusted padding */
+         box-sizing: border-box; /* Include padding in width calculation */
+     }
+     .logo_container h1{
+         font-size: 33px;
+         padding-bottom: 10px;
+         
+     }
+     .menu {
+         width: 20px;
+         height: 4px;
+         background-color: rgb(255, 255, 255);
+         margin: 4px 5px;
+       }
+       
+       .login-button {
+         padding: 9px 10px;
+     }
+     .ul-page-total{
+         display: none;
+     }
+     .li-hidden{
+         display: block;
+     }
+ }
+ 
+ .background-gradient {
+     background: linear-gradient(to right, #e09441, #a15c27); /* Adjust colors as needed */
+     display: flex;
+     background-size: cover;
+     background-position: center;
+     position: relative;
+     width: 100%;
+     height: 77vh;
+     margin: 0;
+     justify-content: center;
+     align-items: center;
+     text-align: center;
+     color: #ecf0f1; /* Light font color */
+ }
+ 
+ 
+ .section {
+     align-items: center;
+     color: #000000; /* Dark gray font color */
+     text-align: center; /* Centeralign the text */
+     width: 80%; /* Adjust the width of the sections */
+     margin: 5px auto; /* Center the sections horizontally and add margin */
+ }
+ 
+ 
+ .section h2 {
+     font-size: 1rem;
+ }
+ 
+ 
+ .section p {
+     font-size: 1.2rem; /* Increase font size for paragraphs */
+     text-align: left; /* Align paragraphs to the left */
+ }
+ 
+ .faq-list {
+     list-style-type: none;
+     padding: 0;
+     margin: 0;
+ }
+ 
+ .faq-title {
+     font-size: 1.2rem !important;
+ }
+ 
+ .faq-list li {
+     margin-bottom: 1rem;
+     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+     padding-bottom: 1rem;
+ }
+ 
+ 
+ .faq-list p {
+     margin: 0;
+ }
+ 
+ .content {
+     padding-bottom: 50px; 
+ }
+ .faq-list {
+     align-items: center;
+     --primaryColor: #011f34;
+     --fontColor: #2c3e50;
+     --darkFontColor: #1f2b38;
+     --lightFontColor: #ecf0f1;
+ }
+ 
+ .faq-list {
+     list-style-type: none;
+     padding: 0;
+     margin: 0;
+ }
+ 
+ .faq-list li {
+     margin-bottom: 1rem;
+     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+     padding-bottom: 1rem;
+ }
+ 
+ .faq-title {
+     cursor: pointer;
+     display: flex;
+     align-items: center;
+     margin: 0; /* Remove any existing margin */
+     padding: 0; /* Remove any existing padding */
+ }
+ 
+ 
+ 
+ .faq-title::before {
+     content: "+";
+     margin-right: 1rem;
+ }
+ 
+ .faq-trigger {
+     display: none;
+ }
+ 
+ .faq-trigger:checked + .faq-title::before {
+     content: "-";
+ }
+ 
+ .faq-detail {
+     display: none;
+ }
+ 
+ .faq-trigger:checked + .faq-title {
+     color: #c77c13; /* Change color hen the checkbox is checked */
+ }
+ .faq-trigger:checked + .faq-title + .faq-detail {
+     display: block;
+ }
+ 
+ 
+ 
+ .faq-title:hover::before {
+     color:rgb(137, 152, 154);
+ }
+ 
+ .faq-detail {
+     animation: fadeIn 0.5s ease forwards;
+     transition: opacity 0.3s ease, transform 0.3s ease;
+ }
+ 
+ #places h2,
+ #transportation h2,
+ #hotels h2,
+ #museum h2,
+ #rules h2 {
+     color: #50320a; /* Change the color of the section headings */
+     text-align: center;
+     font-size: 1.5rem; /* Center align the section headings */
+     margin-bottom: 20px; /* Add margin ottom to the section headings */
+ }
+ #places h4,
+ #transportation h4,
+ #hotels h4,
+ #museum h4,
+ #rules h4 {
+     color: #403b3ba1;
+ }
+ 
+ 
+ @keyframes fadeIn {
+     0% {
+         opacity: 0;
+         transform: translateY(10px);
+     }
+     100% {
+         opacity: 1;
+         transform: translateY(0);
+     }
+ }
+ 
+ .contact-section {
+     padding: 40px;
+     text-align: center;
+     margin-bottom: 30;;
+ }
+ 
+ .block {
+     background-color: #d5cfcf33; /* Whiebakround */
+     color: #473737; /* Dark gray text color */
+     border-radius: 40px;
+     box-shadow: 0px 0px 20px rgba(99, 50, 50, 0.1); /* Sof hadow effect */
+     padding: 40px;
+     max-width: 600px;
+     margin: 0 auto;
+ }
+ 
+ .block p {
+     font-size: 1.5rem;
+     letter-spacing: 1;
+     font-weight: bolder;
+     line-height: 1.6;
+     margin-bottom: 30px;
+ }
+ 
+ .block button {
+     background: linear-gradient(to right, #ff7f00, #ffac51); /* Gradient background */
+     color: #ffffff; 
+     padding: 15px 30px;
+     border-radius: 8px;
+     cursor: pointer;
+     font-size: 1.2rem;
+     border: none;
+     transition: background-color 0.3s, color 0.3s;
+ }
+ 
+ .block button:hover {
+     background-color: #ffac51; /* Darker gradient color on hover */
+     color: #ffffff; /* White text color on hover */
+ }
+ 
+ 
+ .footer-container{
+     max-width: 100%; /* Set maximum width to 100% */
+     margin:auto;
+     
+     
+ }
+ .footer-row{
+     display: flex;
+      border-radius: 7%;
+     
+ }
+ .footer-container ul{
+     list-style: none;
+ }
+ footer{
+     background-color: #2a4851;
+     border-top-right-radius: 30% ;
+     border-top-left-radius: 30% ;
+     opacity: 0.97;
+         width: 100%; /* Set width to 100% */
+ 
+     padding-top: 30px;
+     /*margin: 0 50px;*/
+ 
+ }
+ .footer{
+     background-color: #1e2021;
+     border-top-right-radius: 30% ;
+     border-top-left-radius: 30% ;
+     padding-top: 25px;;
+     /*margin: 0 50px;*/
+ 
+ }
+ .footer-col{
+    width: 25%;
+    padding: 0 20px;
+ }
+ .footer-col h4{
+     font-size: 18px;
+     color: #ffffff;
+     text-transform: capitalize;
+     margin-bottom: 15px;
+     font-weight: 500;
+     position: relative;
+     
+ }
+ 
+ hr.footer-line-col {
+     border-top: 3px solid #774529;
+     margin-left: 0;
+     width: 60px;
+   }
+   
+ .footer-col ul li{
+     margin-bottom: 10px;
+ }
+ .footer-col ul li a{
+     font-size: 16px;
+     text-transform: capitalize;
+     text-decoration: none;
+     font-weight: 300;
+     color: #bbbbbb;
+     display: block;
+     transition: all 0.3s ease;
+ }
+ .footer-col ul li a:hover{
+     color: #7ea1ac;
+     padding-left: 8px;
+ }
+ .footer-col .social-links a{
+     display: inline-block;
+     height: 40px;
+     width: 40px;
+     background-color: #2a4851;
+     margin:0 10px 10px 0;
+     text-align: center;
+     line-height: 40px;
+     border-radius: 50%;
+     color: #ffffff;
+     transition: all 0.5s ease;
+ }
+ .footer-col .social-links a:hover{
+     color: #ffffff;
+     background-color: #b37718;
+ }
+ 
+ /*responsive*/
+ @media(max-width: 767px){
+   .footer-col{
+     width: 50%;
+     margin-bottom: 30px;
+ }
+ }
+ @media(max-width: 767px){
+    
+     .footer-row{
+         flex-wrap: wrap;
+     }
+   .footer-col{
+     width: 20%;
+     }
+     #footer-col-1{
+         padding-left: 10%;
+         }
+     #footer-col-4{
+         
+         display: contents;
+     }
+     #footer-line-col-media{
+         display: none;
+     }
+     #footer-media-title{
+         margin: 10px 20px 10px 70px;
+         
+     }
+ }
+ 
+ 
+ 
+ @media screen and (max-width: 767px) {
+     .background-gradient {
+         height: auto; /* Adjust height to fit content */
+     }
+ 
+     .centered {
+         padding: 0 20px; /* Adjust padding for smaller screens */
+     }
+ 
+     .search-input {
+         width: 100%; /* Make search input full width on smaller screens */
+     }
+ 
+     .search-button {
+         width: 30%; /* Adjust search button width for smaller screens */
+     }
+ 
+     .faq-title {
+         font-size: 1.2rem; /* Decrease font size for questions on smaller screens */
+     }
+ }
+ 
+ .section {
+     align-items: center;
+     color: #000000; /* Dark gray font color */
+     text-align: center; /* Center align the text */
+     width: 80%; /* Adjust the width of the sections */
+     margin: 5px auto; /* Center the sections horizontally and add margin */
+ }
+ 
+ .section h2 {
+     font-size: 2rem; /* Increase font size for h2 */
+     margin-bottom: 20px; /* Add margin bottom to h2 */
+ }
+ 
+ .section p {
+     font-size: 1.2rem; /* Increase font size for paragraphs */
+     text-align: left; /* Align paragraphs to the left */
+ }
+ 
+ .faq-list {
+     list-style-type: none;
+     padding: 0;
+     margin: 0;
+ }
+ 
+ .faq-list li {
+     margin-bottom: 1rem;
+     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+     padding-bottom: 1rem;
+ }
+ 
+ .faq-title {
+     font-size: 1.5rem;
+     cursor: pointer;
+     display: flex;
+     align-items: center;
+     margin: 0; /* Remove any existing margin */
+     padding: 0; /* Remove any existing padding */
+ }
+ 
+ .faq-title::before {
+     content: "+";
+     margin-right: 1rem;
+ }
+ 
+ .faq-trigger {
+     display: none;
+ }
+ 
+ .faq-trigger:checked + .faq-title::before {
+     content: "-";
+ }
+ 
+ .faq-detail {
+     display: none;
+ }
+ 
+ .faq-trigger:checked + .faq-title {
+     color: #c77c13; /* Change color when the checkbox is checked */
+ }
+ 
+ .faq-trigger:checked + .faq-title + .faq-detail {
+     display: block;
+ }
+ 
+ 
+ .faq-title:hover::before {
+     color: #757575; /* Change color of the plus sign on hover */
+ }
+ 
+ .faq-detail {
+     animation: fadeIn 0.5s ease forwards;
+     transition: opacity 0.3s ease, transform 0.3s ease;
+ }
+ 
+ @keyframes fadeIn {
+     0% {
+         opacity: 0;
+         transform: translateY(10px);
+     }
+     100% {
+         opacity: 1;
+         transform: translateY(0);
+     }
+ }
