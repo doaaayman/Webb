@@ -279,7 +279,7 @@ body {
  }
  
  .background-gradient {
-     background: linear-gradient(to right, #e09441, #a15c27); /* Adjust colors as needed */
+     background: #2a4851; /* Adjust colors as needed */
      display: flex;
      background-size: cover;
      background-position: center;
@@ -407,7 +407,7 @@ body {
  #hotels h2,
  #museum h2,
  #rules h2 {
-     color: #50320a; /* Change the color of the section headings */
+     color: #b37718; /* Change the color of the section headings */
      text-align: center;
      font-size: 1.5rem; /* Center align the section headings */
      margin-bottom: 20px; /* Add margin ottom to the section headings */
